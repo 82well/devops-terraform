@@ -2,7 +2,12 @@ resource "aws_vpc" "eks_vpc" {
   cidr_block           = var.cidr_block
   enable_dns_support   = true
   enable_dns_hostnames = true
-  tags = {
-    Name = "devops-eks-vpc"
-  }
+
+  tags = merge(
+    local.tags,
+    {
+      Name                     = "devops-subnet-public-1b"
+      "kubernetes.io/role/elb" = "1"
+    }
+  )
 }
