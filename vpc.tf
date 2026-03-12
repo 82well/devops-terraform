@@ -6,8 +6,7 @@ resource "aws_vpc" "eks_vpc" {
   tags = merge(
     local.tags,
     {
-      Name                     = "devops-subnet-public-1b"
-      "kubernetes.io/role/elb" = "1"
+      Name = "${var.project_name}-vpc"
     }
   )
 }
