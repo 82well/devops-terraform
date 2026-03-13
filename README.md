@@ -34,15 +34,16 @@ Este projeto provisiona uma infraestrutura completa na AWS utilizando Terraform,
 2. **Configure as variáveis:**
 Edite o arquivo terraform.tfvars (crie se necessário) com os valores das variáveis:
 
-project_name  = "meu-projeto"
-environment   = "dev"
-cidr_block    = "10.0.0.0/16"
-tags = {
+- project_name  = "meu-projeto"
+- environment   = "dev"
+- cidr_block    = "10.0.0.0/16"
+- public_subnet_1a = "subnet-xxxxxx"
+- public_subnet_1b = "subnet-yyyyyy"
+- tags = {
   Owner = "SeuNome"
   Environment = "dev"
 }
-public_subnet_1a = "subnet-xxxxxx"
-public_subnet_1b = "subnet-yyyyyy"
+
 
 3. **Inicialize o Terraform:**
    ```bash
