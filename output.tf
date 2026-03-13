@@ -19,4 +19,9 @@ output "subnet_priv_1b" {
   description = "ID of the private subnet in availability zone 1b"
 }
 
+output "eks_vpc_config" {
+  value       = module.eks_cluster.eks_vpc_config
+  description = "EKS cluster VPC configuration details"  
+}
+
 

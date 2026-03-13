@@ -5,3 +5,11 @@ module "eks_network" {
   environment  = var.environment
   tags         = locals.tags
 }
+
+module "eks_cluster" {
+  source           = "./modules/eks"
+  project_name     = var.project_name
+  tags             = locals.tags
+  public_subnet_1a = module.eks_network.public_subnet_1a
+  public_subnet_1b = module.eks_network.public_subnet_1b
+}
