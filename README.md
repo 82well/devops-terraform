@@ -65,9 +65,12 @@ public_subnet_1b = "subnet-yyyyyy"
     terraform output
     ```
 **Observações Importantes**
+
 Certifique-se de que as subnets informadas nas variáveis realmente existem ou serão criadas pelo próprio Terraform.
+
 O backend remoto está configurado para um bucket S3 chamado devops-s3-demo-comunidade. Altere conforme necessário.
+
 O projeto utiliza tags para facilitar a identificação dos recursos.
-Licença
-Este projeto está licenciado sob a Mozilla Public License 2.0.
+
+
     
