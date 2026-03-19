@@ -1,6 +1,8 @@
 # devops-terraform
 Aplicação para Cloud
 
+![Diagrama da Arquitetura](img/Infraestrutura%20de%20Kubernetes%20escalável%20usando%20Terraform%20na%20AWS.jpg)
+
 # Projeto Terraform - EKS Cluster AWS
 
 Este projeto provisiona uma infraestrutura completa na AWS utilizando Terraform, incluindo um cluster EKS, VPC, subnets públicas e privadas, roles IAM, Internet Gateway, Route Tables e políticas necessárias para o funcionamento do AWS Load Balancer Controller.
